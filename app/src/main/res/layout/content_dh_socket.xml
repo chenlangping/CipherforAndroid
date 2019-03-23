@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5FFFA">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dhtext"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DH生成:"
+            android:id="@+id/dhget"
+            android:layout_gravity="left|center_vertical" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收:"
+            android:id="@+id/recv"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recvtext"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秘钥"
+            android:id="@+id/keyview"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/keytext"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="DH"
+            android:id="@+id/dhbtn"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:id="@+id/smbbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="秘钥"
+            android:id="@+id/getbtn"
+            android:background="@drawable/shape"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06">
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/backbtn"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/shape"/>
+    </FrameLayout>
+
+</LinearLayout>

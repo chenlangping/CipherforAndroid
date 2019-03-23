@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#F5FFFA">
+    <TextView
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelView"
+        android:layout_weight="0.10"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP:       "
+            android:id="@+id/ipView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipText"
+            android:digits="0123456789."
+            android:layout_weight="0.50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Port:   "
+            android:id="@+id/potrView" />
+
+        <EditText
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/portText"
+            android:digits="0123456789"
+            android:layout_weight="0.52" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.26">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="连接"
+            android:id="@+id/connectButton"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/backbtn"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="0.10"
+            android:background="@drawable/shape"/>
+    </FrameLayout>
+
+</LinearLayout>

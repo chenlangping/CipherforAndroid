@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#F5FFFA">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="接受消息:"
+        android:id="@+id/plainlabel"
+        android:layout_weight="0.03" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarFadeDuration="2000"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/recvText"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.52" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明文:"
+            android:id="@+id/plain_socket"
+            android:layout_gravity="left|center_vertical" />
+
+        <EditText
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/plain_socketText"
+            android:digits="abcdefghijklmnopqrstuvwxyz"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/key_socketText"
+            android:digits="abcdefghijklmnopqrstuvwxyz"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秘钥:"
+            android:id="@+id/key_socket"
+            android:layout_gravity="left|center_vertical" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:id="@+id/smbbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解密"
+            android:id="@+id/debtn"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/shape"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/backbtn"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/shape"/>
+    </FrameLayout>
+
+</LinearLayout>

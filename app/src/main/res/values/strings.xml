@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cipher</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_caesar">Caesar</string>
+    <string name="title_activity_autocipher">Autocipher</string>
+    <string name="title_activity_keyword">Keyword</string>
+    <string name="title_activity_vigenere">Vigenere</string>
+    <string name="title_activity_playfair">Playfair</string>
+    <string name="title_activity_permutation">Permutation</string>
+    <string name="title_activity_column">Column</string>
+    <string name="title_activity_c">CA</string>
+    <string name="title_activity_rs">RSA</string>
+    <string name="title_activity_socket">Socket</string>
+    <string name="title_activity_cipher">CipherActivity</string>
+    <string name="title_activity_autocipher_socket">Autocipher_socket</string>
+    <string name="title_activity_caesar_socket">Caesar_socket</string>
+    <string name="title_activity_column_socket">Column_socket</string>
+    <string name="title_activity_keyword_socket">Keyword_socket</string>
+    <string name="title_activity_permutation_socket">Permutation_socket</string>
+    <string name="title_activity_playfair_socket">Playfair_socket</string>
+    <string name="title_activity_vigenere_socket">Vigenere_socket</string>
+    <string name="title_activity_des">DES</string>
+    <string name="title_activity_rsa_socket">RSA_socket</string>
+    <string name="title_activity_ca_socket">CA_socket</string>
+    <string name="title_activity_des_socket">DES_socket</string>
+    <string name="title_activity_dh_socket">DH_socket</string>
+    <string name="title_activity_file_c">FileCA</string>
+</resources>
